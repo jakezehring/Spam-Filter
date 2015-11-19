@@ -1,4 +1,4 @@
-Note: I cant get this dumb readme to look normal, just open up the file
+Note: I cant get this dumb readme to look normal, just open up the file and press rawwwwww
 
 UML:
 
