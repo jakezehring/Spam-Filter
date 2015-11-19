@@ -1,3 +1,5 @@
+Note: I cant get this dumb readme to look normal, just open up the file
+
 UML:
 
 class Word
