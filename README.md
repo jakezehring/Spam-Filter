@@ -11,6 +11,7 @@ class Word
 +int return_spam()
 +string return_name()
 
+
 class Classifier
 *vector <word> dictonary (or set if phil wants)
 *ifile spam
