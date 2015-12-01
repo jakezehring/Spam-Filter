@@ -1,5 +1,5 @@
 #Spam Filter
-#team default string
+#team default_string
 
 SpamFilter: main.cpp classifier.o
      g++ -Wall main.cpp classifier.o -o SpamFilter
