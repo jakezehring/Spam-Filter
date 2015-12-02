@@ -1,6 +1,5 @@
 //Spam Filter
 //Team default string
-
 #include "classifier.h"
 
 using namespace std;
@@ -8,6 +7,8 @@ using namespace std;
 //Constructor, needs to open both files, needs to init dicitionary with each unique word, needs to count the number of words in the spam/ham files
 Classifier::classifier(string ham, string spam)
 {
+	spam.open(spam);
+	ham.open(ham);
 	total_spam = total_ham = 0;
 	count_each_word();
 	count_totals();
@@ -16,7 +17,31 @@ Classifier::classifier(string ham, string spam)
 //iterate trough dictionary, counting the number of times each word appears in spam/ham
 void Classifier::count_each_word();
 {
-
+	string input;
+	word *pusher;
+	while(input << spam){
+		pusher=dictionary.begin();
+		while(pusher!=dictionary.end()){
+			if(pusher->return_name()==input){
+				pusher->increment_spam();
+				break;
+			}
+		}	
+		pusher = new word(input);
+		push_back(&pusher);
+		pusher->increment_spam();	
+	}
+	while(input << ham){
+		pusher=dictionary.begin();
+		while(pusher!=dictionary.end()){
+			if(pusher->return_name()==input){
+				pusher->increment_ham();
+				break;
+			}
+		}
+		pusher = new word(input);
+		push_back(&pusher);
+		pusher->increment_ham();
 }
 
 //finds the number of times target appears in ham
