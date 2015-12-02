@@ -7,7 +7,7 @@
 class Word
 {
 	private
-	    string m_name;
+	    std::string m_name;
 	    int number_in_ham();
 	    int number_in_spam();
 	public
@@ -15,5 +15,5 @@ class Word
 	    void increment_spam();
 		int return_ham();
 		int return_spam();
-		string return_name();
+		std::string return_name();
 };
