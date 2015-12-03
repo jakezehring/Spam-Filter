@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <classifier.h>
+#include "classifier.h"
 
 using namespace std;
 
@@ -16,13 +16,10 @@ int main(int argc, char* argv[])
 	{
 		cerr << "Invalid number of inputs\n";
 		return 1;
-	}
-
-	Classifier classify;
+	}	
 	std::string hamFile = argv[1];
 	std::string spamFile = argv[2];
-	classify.classifier(hamFile, spamFile);
-
+	Classifier classify(hamFile, spamFile);
 	for(int i=48; i<58; i++)
 	{
 		for(int j = 48; j<58; j++)

@@ -5,68 +5,77 @@
 using namespace std;
 
 //Constructor, needs to open both files, needs to init dicitionary with each unique word, needs to count the number of words in the spam/ham files
-Classifier::classifier(string ham, string spam)
+Classifier::Classifier(string ham, string spam)
 {
-	spam.open(spam);
-	ham.open(ham);
+	sin.open(spam.c_str());
+	hin.open(ham.c_str());
 	total_spam = total_ham = 0;
 	count_each_word();
-	count_totals();
 }
 
 //iterate trough dictionary, counting the number of times each word appears in spam/ham
-void Classifier::count_each_word();
+void Classifier::count_each_word()
 {
 	string input;
-	word *pusher;
-	while(input << spam){
-		pusher=dictionary.begin();
-		while(pusher!=dictionary.end()){
+	Word *pusher;
+	while(sin >> input){
+		pusher=*(dictionary.begin());
+		while(pusher!=*(dictionary.end())){
 			if(pusher->return_name()==input){
 				pusher->increment_spam();
 				break;
 			}
-		}	
-		pusher = new word(input);
-		push_back(&pusher);
-		pusher->increment_spam();	
+		}
+		if(pusher==*(dictionary.end())) continue;	
+		pusher = new Word(input);
+		dictionary.push_back(pusher);
+		pusher->increment_spam();
+		total_spam++;	
 	}
-	while(input << ham){
-		pusher=dictionary.begin();
-		while(pusher!=dictionary.end()){
+	while(hin >> input){
+		pusher=*(dictionary.begin());
+		while(pusher!=*(dictionary.end())){
 			if(pusher->return_name()==input){
 				pusher->increment_ham();
 				break;
 			}
 		}
-		pusher = new word(input);
-		push_back(&pusher);
+		if(pusher==*(dictionary.end())) continue;
+		pusher = new Word(input);
+		dictionary.push_back(pusher);
 		pusher->increment_ham();
+	}
 }
 
 //finds the number of times target appears in ham
 int Classifier::lookup_ham(string target)
 {
-
+	for(int i=0; i<dictionary.size(); i++)
+		if(dictionary[i]->return_name()==target)
+			return return_ham();
+	return -1;
 }
 
 //finds the number of times target appears in spam
 int Classifier::lookup_spam(string target)
 {
-
+	for(int i=0; i<dictionary.size(); i++)
+		if(dictionary[i]->return_name()==target)
+			return return_spam();
+	return -1;
 }
 
-int return_total()
+int Classifier::return_total()
 {
-	return dictionary.size()
+	return dictionary.size();
 }
 
-int return_total_ham()
+int Classifier::return_total_ham()
 {
 	return total_ham;
 }
 
-int return_total_spam()
+int Classifier::return_total_spam()
 {
 	return total_spam;
 }

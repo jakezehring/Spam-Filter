@@ -2,8 +2,9 @@
 //Team default string
 
 #include "word.h"
+using namespace std;
 
-Word::word(string name)
+Word::Word(string name)
 {
 	m_name = name;
 	number_in_ham = number_in_spam = 0;

@@ -6,13 +6,14 @@
 
 class Word
 {
-	private
+	private:
 	    std::string m_name;
-	    int number_in_ham();
-	    int number_in_spam();
-	public
+	    int number_in_ham;
+	    int number_in_spam;
+	public:
+		Word(std::string name);
 		void increment_ham();
-	    void increment_spam();
+		void increment_spam();
 		int return_ham();
 		int return_spam();
 		std::string return_name();
