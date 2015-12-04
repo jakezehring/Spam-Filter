@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 		for(int j = 48; j<58; j++)
 		{
 			std::string input = "tests/" + argv[3] + (char) i + (char) j + ".txt";
-			fstream ifile(in, ios::in);
+			fstream ifile(input, ios::in);
 			if(!ifile)
 			{
 				cerr << "Couldn't open file: " << input << endl;
@@ -37,8 +37,8 @@ int main(int argc, char* argv[])
 			int total = classify.return_total();
 			double hamProb = 1;
 			double spamProb = 1;
-			double ham = (totalH+k)/(total+k*2)
-			double spam = (totalS+k)/(total+k*2)
+			double ham = (totalH+k)/(total+k*2);
+			double spam = (totalS+k)/(total+k*2);
 			std::string target;
 			std::string message = "\0";
 			while(ifile >> target)
@@ -55,14 +55,14 @@ int main(int argc, char* argv[])
 			double mProb=hamProb*ham+spamProb*spam;
 			double hamGivenM=hamProb*ham/mProb;
 			double spamGivenM=spamProb*spam/mProb;
-			cout << "Probability of ham = " << hamGivenM << endl;
+			cout << "Probability of ham = " << hamGivenM <k endl;
 			cout << "Probability of spam = " << spamGivenM << endl;
 			if(hamGivenM>spamGivenM)
-				cout << message << " is probably OK\n"
+				cout << message << " is probably OK\n";
 			else if(spamGivenM>hamGivenM)
 				cout << message << " is probably spam\n";
 			else
-				cout << "Who knows...\n"
+				cout << "Who knows...\n";
 		}
 	}
 	return 0;

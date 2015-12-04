@@ -50,10 +50,10 @@ void Classifier::count_each_word()
 //finds the number of times target appears in ham
 int Classifier::lookup_ham(string target)
 {
-	for(int i=0; i<dictionary.size(); i++)
+	for(unsigned int i=0; i<dictionary.size(); i++)
 		if(dictionary[i]->return_name()==target)
-			return return_ham();
-	return -1;
+			return dictionary[i]->return_ham();
+	return 0;
 }
 
 //finds the number of times target appears in spam
@@ -61,8 +61,8 @@ int Classifier::lookup_spam(string target)
 {
 	for(int i=0; i<dictionary.size(); i++)
 		if(dictionary[i]->return_name()==target)
-			return return_spam();
-	return -1;
+			return dictionary[i]->return_spam();
+	return 0;
 }
 
 int Classifier::return_total()
