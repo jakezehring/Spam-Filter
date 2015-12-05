@@ -4,6 +4,9 @@
 #include <iostream>
 #include <string>
 
+#ifndef WORD_H
+#define WORD_H
+
 class Word
 {
 	private:
@@ -18,3 +21,5 @@ class Word
 		int return_spam();
 		std::string return_name();
 };
+
+#endif

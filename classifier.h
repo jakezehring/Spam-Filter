@@ -7,6 +7,9 @@
 #include <fstream>
 #include "word.h"
 
+#ifndef CLASSIFIER_H
+#define CLASSIFIER_H
+
 class Classifier
 {
 	private:
@@ -24,3 +27,5 @@ class Classifier
 		int return_total_spam();
 		int return_total_ham();
 };
+
+#endif
