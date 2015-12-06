@@ -1,0 +1,127 @@
+Instructor Bryan Dixon posted a new Note
+Practice Final
+Here's the practice final
+finalpracticef15.pdf
+Hope you have a great weekend
+Apple Computer
+Apple Information Session catered
+45 minute Presentation from THEIR Engineering Department
+Wednesday 12/09/15 at 2PM
+Career Center SSC 270
+AMAZING opportunity to grow with them at their Elk Grove campus
+Chance to discuss other positions and possible internships with Apple
+Be sure to BRING YOUR RESUME
+Apple is building some of the biggest high performance internet services They are adding to their innovative team of engineers who will be impacting hundreds of millions of people worldwide
+Questions Contact Art Cox
+Apple is looking for Computer Science and Computer Engineering talent Please help me insure a strong turn out
+Apple Computer
+Apple Information Session catered
+45 minute Presentation from THEIR Engineering Dept
+Wednesday 12/09/15 at 2PM
+Career Center SSC 270
+AMAZING opportunity to grow with them at their Elk Grove campus
+Chance to discuss other positions and possible internships with Apple
+Apple is building some of the biggest high performance internet services They are adding to their innovative team of engineers who will be impacting hundreds of millions of people worldwide
+Questions Contact Art Cox
+After we write
+to me
+Your classmate posted a new Question
+After we write
+after a process writes to fd do we need to close fd
+Click here to view Search or link to this question with Follow it to get notified when a response comes in
+Sign up for more classes at
+Want Piazza in all your classes Tell your professors and TAs today It's free
+Good luck on finals and please turn in Make A Wish stars money
+Hello everyone I hope Thanksgiving break was restful and that you are now working full speed ahead to end the fall semester as strongly as we all anticipated Make sure to access your resources as you might need in preparation for finals week and wrapping up the semester I am currently on vacation but want to wish you all well with finals and over winter break I'll look forward to seeing you next semester If you were someone who took the opportunity to help us fundraise for Make A Wish please return any unsold stars and or monies collected from the fundraising to Gary McMahon in the CSSC You folks are half-way to the goal of 2000 dollars Excellent job I hope you have an excellent winter break and the best of luck to those of you that will not be returning for the spring Congratulations upon graduation if that is your case Be well Bertha Alicia
+Due Friday
+I decided to be lenient and allow you to complete Exercises 11 and 12 anonymous peer review 2 and final experiences survey before midnight on Friday However no late work will be accepted and will result in a zero
+In addition the deadline for your third blog post has been extended until December 11th next Friday
+I look forward to your presentations next week
+4-5pm Lab Tomorrow
+Instructor Bryan Dixon posted a new Note
+4-5pm Lab Tomorrow
+I'd like to attend an honor's project presentation tomorrow that is scheduled at the same time as the lab from 4 5pm tomorrow As such there will be no lab during that time however I'll still be there for the 5 6pm 1 2pm labs to help answer questions you are still having about the last assignment during those labs
+Scholarships Info-Session today 12/1 and tomorrow 12/2 2 3pm LANG 206
+Announcement Available in course CSCI580 Project 2
+For groups that presented Project 2 last Monday
+To get full credit from the instructor please test your classifiers on a test data testing set should have a fixed number of examples Accuracy equals to the number of correctly classified examples to the total number of examples
+Send me results by email
+Caleb Callaway's Honors presentation
+CSCI/CINS majors FYI
+Subject Caleb Callaway will be presenting his Computer Science Honors project Thursday December 3 4-5pm in Langdon 104
+Name Tools for the Toolmakers Designing a Programming Language
+Who Caleb Callaway advised by Tyson Henry
+What Programming language implementation and design complete with working examples
+When Thursday December 3rd 4 PM to 5 PM
+Where Langdon 104
+Why If you care about beautiful and expressive languages if first class functions are your jam or if you've ever wondered why there are semi-colons literally everywhere this presentation is for you Of particular interest to students who have not yet completed Compilers CSCI515 as the presentation will explore many of the same concepts Also of interest to students who have completed Compilers as the presentation will explore general purpose applications of the subject matter
+Pizza and soda to be provided
+HPE Logos
+Hi Guys
+Please find the HPE logos attached
+Thanks
+POLS155 Do Survey and Extra Credit 5
+Dear POLS 155 Students
+Remember to do the Town Hall Meeting Reflections Survey before midnight tonight REQUIRED
+Also note that Extra Credit Opportunity 5 is now on our class Blackboard site It is due in lecture on Monday December 7th
+All the best
+Professor Dwyre
+Extra credit deliverable Number of cores 11/29/15 4:08 PM
+For extra credit deliverable of assigning resolver threads value equal to number of cores
+do we need to print statement showing number of cores and threads or no need of doing that
+POLS155 Announcements
+POLS155 Announcements
+Do the Town Hall Meeting Reflections Survey by 11:59pm tomorrow Monday November 30 This survey is REQUIRED
+Chapter 15 Smartbook Assignment due by 9:30am tomorrow Monday November 30 Just one more after this one
+Town Hall Meeting Assignment #3 due next Wednesday December 9 start working on it It is worth 15% of your grade Submit both a hard copy of your final paper and submit it to TURNITIN by 10:00am on December 9
+The POLS155 Exam 3 is on Monday December 14 at 8:00am Please see Exam 3 Information document on the class Blackboard site for what the exam covers and room assignments the exam will NOT be in PAC144 be sure to go to the correct room This final exam is worth 15% of your grade
+Extra Credit Opportunities coming soon
+See you tomorrow
+Popping blank hostnames
+I made the functions for the requester and resolver threads and the locks should be in their proper places but every time I run the program the resolver threads keep popping empty strings from the queue even though the queue is not empty Sometimes they actually pop host names that the requester put in the queue but most of the time blanks are popped from the queue Any ideas what could be causing this
+same ipaddress printing multiple times for single domain name
+Hey Bryan
+I am getting same ipaddress multiple times for single domain name is this ok
+Second thread sometimes not completing
+Hey Bryan Or anyone Not sure if you're going to answer this over break but I am having an issue where if I just create two threads a requester thread and a resolver thread The requester adds hostnames to the queue and the resolver pops them off of the queue resolves the hostname and then puts the output to the output file In main I have
+In my thread functions I also have a mutex queue_lock and a mutex outfile_lock
+So the issue is that the second thread sometimes will go into the function and other times it will not go into the function I am not sure what I am doing wrong and was wondering if anyone ran into this also By the way the locks do not matter the program behaves the same with or without them
+Hi All
+Since you have not much time to work on Project 2 there would be no HW10 You had total of nine homework assignments this semester
+Thanks
+Elena
+We have FOUR newly posted internship opportunities with pay
+PIXAR Animation Studios Emeryville California
+Click on these links to read job descriptions
+Media Systems Internship February 2016
+Systems Mac Team Internship February 2016
+Systems Production Support Intern February 2016
+Systems Hardware Support Internship To be determined
+Questions Need help with your resume
+Come to the Career Center Student Services Center 270
+Drop in hours 1:00-4:00PM M-F or call 530-898-5253
+www.csuchico.edu/careers
+Like us on Facebook
+ECC Scholarship Info Session Dec 1 and Dec 2
+16 17 ECC Scholarship Info Session
+Tues December 1 LANG106 2 3pm
+Wed December 2 LANG106 2 3pm
+Terryl Murphy from the Financial Aid and Scholarship Office will be presenting information on the scholarship application process for consideration for 2016 2017 She will also talk about various scholarships available and share hints on how to improve your chances of success All students are encouraged to attend this important event
+Motor and Actuator Sale Today
+Motor and Actuator Sale
+The American Institute of Mechatronics Engineers
+Friday November 20th 1pm 3pm
+In front of the O'Connell Technology Center on the Langdon Hall side
+AIME has a large inventory of motors and actuators as well as controllers and other electronic devices that can easily and inexpensively be used for your personal or school projects or just to break it open and see how it works Prices are at least 20% lower than online and you don't have to worry about shipping
+Please check out www.chicoaime.org for motor and actuator selection
+Questions Please contact Jen the AIME Parts Manager at
+office hours
+Do you have office hours today
+GREAT JOB Best Town Hall Meeting Ever
+Bravo YOU made this year's Town Hall Meeting the best ever
+Consultants remarked that you were well prepared engaged and ready to discuss your topics I am very proud of you I hope you enjoyed the evening and found it helpful to meet with the policy consultants
+Please complete the Town Hall Meeting Reflections Survey NOW available on our class Blackboard site The survey will be open until 11:59pm on Monday November 30
+Have a fabulous Thanksgiving Break
+Professor Dwyre
+Hanging
+When I run the multi-lookup input/names1.txt input/names2.txt input/names3.txt input/names4.txt input/names5.txt output.txt command in gdb my program runs fine and exits normally However when I run that some command without gdb it just hangs and sits there I am confused as to why it works in gdb but not without gdb
