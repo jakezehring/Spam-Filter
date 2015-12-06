@@ -1,14 +1,12 @@
 //Spam Filter
 //Team default string
-
+#ifndef CLASSIFIER_H
+#define CLASSIFIER_H
 #include <vector>
 #include <string>
 #include <iostream>
 #include <fstream>
 #include "word.h"
-
-#ifndef CLASSIFIER_H
-#define CLASSIFIER_H
 
 class Classifier
 {

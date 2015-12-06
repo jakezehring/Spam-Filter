@@ -1,11 +1,10 @@
 //Spam Filter
 //Team default string
+#ifndef WORD_H
+#define WORD_H
 
 #include <iostream>
 #include <string>
-
-#ifndef WORD_H
-#define WORD_H
 
 class Word
 {

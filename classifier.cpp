@@ -2,6 +2,7 @@
 //Team default string
 
 #include "classifier.h"
+#include "word.h"
 
 using namespace std;
 
