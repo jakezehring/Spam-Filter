@@ -17,9 +17,9 @@ int main(int argc, char* argv[])
 		cerr << "Invalid number of inputs\n";
 		return 1;
 	}	
-	std::string hamFile = argv[1];
-	std::string spamFile = argv[2];
-	Classifier classify(hamFile, spamFile);
+	std::string hamFile=argv[1];
+	std::string spamFile=argv[2];
+	Classifier *classify=new Classifier(hamFile, spamFile);
 	for(int i=48; i<58; i++)
 	{
 		for(int j = 48; j<58; j++)
@@ -34,9 +34,9 @@ int main(int argc, char* argv[])
 				continue;
 			}
 
-			int totalH = classify.return_total_ham();
-			int totalS = classify.return_total_spam();
-			int total = classify.return_total();
+			int totalH = classify->return_total_ham();
+			int totalS = classify->return_total_spam();
+			int total = classify->return_total();
 			double hamProb = 1;
 			double spamProb = 1;
 			double ham = (totalH+k)/(total+k*2);
@@ -49,8 +49,8 @@ int main(int argc, char* argv[])
 					message=target;
 				else
 					message=message+" "+target;
-				int h=classify.lookup_ham(target);
-				int s=classify.lookup_spam(target);
+				int h=classify->lookup_ham(target);
+				int s=classify->lookup_spam(target);
 				hamProb*=(h+k)/(totalH+k*total);
 				spamProb*=(s+k)/(totalS+k*total);
 			}
