@@ -10,3 +10,5 @@ classifier.o: classifier.cpp classifier.h word.h
 word.o: word.cpp word.h
 	g++ -c -g -Wall word.cpp
 
+clean:
+	rm *.o SpamFilter
