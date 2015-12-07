@@ -21,28 +21,30 @@ void Classifier::count_each_word()
 	string input;
 	Word *pusher;
 	while(sin >> input){
-		pusher=*(dictionary.begin());
-		while(pusher!=*(dictionary.end())){
-			if(pusher->return_name()==input){
-				pusher->increment_spam();
-				break;
+		if(!dictionary.empty()){
+			pusher=dictionary[0];
+			for(unsigned int i=0; i<dictionary.size(); i++){
+				if(pusher->return_name()==input){
+					pusher->increment_spam();
+					break;
+				}	
 			}
+			if(pusher->return_name()==input) continue;
 		}
-		if(pusher==*(dictionary.end())) continue;	
 		pusher = new Word(input);
 		dictionary.push_back(pusher);
 		pusher->increment_spam();
 		total_spam++;	
 	}
 	while(hin >> input){
-		pusher=*(dictionary.begin());
-		while(pusher!=*(dictionary.end())){
+		pusher=dictionary[0];
+		for(unsigned int i=0; i<dictionary.size(); i++){
 			if(pusher->return_name()==input){
 				pusher->increment_ham();
 				break;
 			}
 		}
-		if(pusher==*(dictionary.end())) continue;
+		if(pusher->return_name()==input) continue;
 		pusher = new Word(input);
 		dictionary.push_back(pusher);
 		pusher->increment_ham();
