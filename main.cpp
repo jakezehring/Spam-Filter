@@ -20,9 +20,9 @@ int main(int argc, char* argv[])
 	std::string hamFile=argv[1];
 	std::string spamFile=argv[2];
 	Classifier *classify=new Classifier(hamFile, spamFile);
-	for(int i=48; i<58; i++)
+	for(int i=48; i<50; i++)
 	{
-		for(int j = 48; j<50; j++)
+		for(int j = 48; j<58; j++)
 		{
 			std::string input = argv[3];
 			input = "tests/" + input;
