@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	Classifier *classify=new Classifier(hamFile, spamFile);
 	for(int i=48; i<58; i++)
 	{
-		for(int j = 48; j<58; j++)
+		for(int j = 48; j<50; j++)
 		{
 			std::string input = argv[3];
 			input = "tests/" + input;
