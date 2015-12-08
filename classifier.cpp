@@ -12,7 +12,7 @@ Classifier::Classifier(string ham, string spam)
 	sin.open(spam.c_str(), ios::in);
 	hin.open(ham.c_str(), ios::in);
 	total_spam = total_ham = 0;
-	//count_each_word();
+	count_each_word();
 }
 
 //iterate trough dictionary, counting the number of times each word appears in spam/ham
@@ -48,6 +48,7 @@ void Classifier::count_each_word()
 		pusher = new Word(input);
 		dictionary.push_back(pusher);
 		pusher->increment_ham();
+		total_ham++;
 	}
 }
 
