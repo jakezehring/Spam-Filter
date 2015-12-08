@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int k = 1;
+double k = 1;
 
 //three inputs, 1 and 2 are ham and spam(in that order), which are passed to the Classifier constructor. 3 is the input file, which is the email we are trying to classify
 int main(int argc, char* argv[])
@@ -44,8 +44,8 @@ int main(int argc, char* argv[])
 			}
 			double hamProb = 1;
 			double spamProb = 1;
-			double ham = (totalH+k)/(total+k*2);
-			double spam = (totalS+k)/(total+k*2);
+			double ham = ((double)totalH+k)/((double)total+k*2);
+			double spam = ((double)totalS+k)/((double)total+k*2);
 			std::string target;
 			std::string message = "\0";
 			while(ifile >> target)
@@ -56,8 +56,8 @@ int main(int argc, char* argv[])
 					message=message+" "+target;
 				int h=classify->lookup_ham(target);
 				int s=classify->lookup_spam(target);
-				hamProb*=(h+k)/(totalH+k*total);
-				spamProb*=(s+k)/(totalS+k*total);
+				hamProb*=((double)h+k)/((double)totalH+k*(double)total);
+				spamProb*=((double)s+k)/((double)totalS+k*(double)total);
 			}
 			double mProb=hamProb*ham+spamProb*spam;
 			double hamGivenM=hamProb*ham/mProb;
