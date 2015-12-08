@@ -37,6 +37,11 @@ int main(int argc, char* argv[])
 			int totalH = classify->return_total_ham();
 			int totalS = classify->return_total_spam();
 			int total = classify->return_total();
+			if(total==0)
+			{
+				cout << "Dictionary empty.\n";
+				break;
+			}
 			double hamProb = 1;
 			double spamProb = 1;
 			double ham = (totalH+k)/(total+k*2);
@@ -57,8 +62,8 @@ int main(int argc, char* argv[])
 			double mProb=hamProb*ham+spamProb*spam;
 			double hamGivenM=hamProb*ham/mProb;
 			double spamGivenM=spamProb*spam/mProb;
-			cout << "Probability of ham = " << hamGivenM << endl;
-			cout << "Probability of spam = " << spamGivenM << endl;
+			cout << "\nProbability of ham = " << hamGivenM << endl;
+			cout << "\nProbability of spam = " << spamGivenM << endl;
 			if(hamGivenM>spamGivenM)
 				cout << message << " is probably OK\n";
 			else if(spamGivenM>hamGivenM)
