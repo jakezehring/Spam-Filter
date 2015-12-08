@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 		{
 			std::string input = argv[3];
 			input = "tests/" + input;
-			input += (char) i + (char) j + ".txt";
+			input = input + (char) i + (char) j + ".txt";
 			fstream ifile(input.c_str(), ios::in);
 			if(!ifile)
 			{
